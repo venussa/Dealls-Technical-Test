@@ -2,8 +2,8 @@ package handlers
 
 import (
   "net/http"
-  "login-api/database"
-  "login-api/models"
+  "github.com/venussa/Dealls-Technical-Test/database"
+  "github.com/venussa/Dealls-Technical-Test/models"
   "github.com/gin-gonic/gin"
   "golang.org/x/crypto/bcrypt"
 )

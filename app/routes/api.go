@@ -2,7 +2,7 @@ package routes
 
 import (
     "github.com/gin-gonic/gin"
-    "login-api/handlers"
+    "github.com/venussa/Dealls-Technical-Test/handlers"
 )
 
 func SetupAuthRoutes(router *gin.Engine) {

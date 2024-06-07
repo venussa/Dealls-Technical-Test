@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	"login-api/database"
-	"login-api/app/routes"
-	"env"
+	"github.com/venussa/Dealls-Technical-Test/database"
+	"github.com/venussa/Dealls-Technical-Test/app/routes"
+	"github.com/venussa/Dealls-Technical-Test/app/config/env"
 	"github.com/gin-gonic/gin"
 	_ "github.com/golang-migrate/migrate/v4/source/file"
 	_ "github.com/go-sql-driver/mysql"

@@ -5,7 +5,7 @@ import (
   "fmt"
   "gorm.io/driver/mysql"
   "gorm.io/gorm"
-  "login-api/models"
+  "github.com/venussa/Dealls-Technical-Test/models"
   "github.com/spf13/viper"
 )
 

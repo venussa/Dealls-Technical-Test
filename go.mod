@@ -1,4 +1,4 @@
-module login-api
+module github.com/venussa/Dealls-Technical-Test
 
 go 1.21.6
 
