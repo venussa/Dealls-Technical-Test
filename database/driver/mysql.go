@@ -5,7 +5,7 @@ import (
   "fmt"
   mysql "gorm.io/driver/mysql"
   gorm "gorm.io/gorm"
-  CoreConfig "github.com/venussa/Dealls-Technical-Test/app/config"
+  CoreConfig "github.com/venussa/Dealls-Technical-Test/config"
 )
 
 type Config struct {
