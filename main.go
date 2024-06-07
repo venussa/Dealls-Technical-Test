@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	routes "github.com/venussa/Dealls-Technical-Test/app/routes"
-	config "github.com/venussa/Dealls-Technical-Test/app/config"
+	routes "github.com/venussa/Dealls-Technical-Test/routes"
+	config "github.com/venussa/Dealls-Technical-Test/config"
 	migration "github.com/venussa/Dealls-Technical-Test/database/migration"
 	gin "github.com/gin-gonic/gin"
 )
