@@ -1,12 +1,11 @@
-package env
+package config
 
 import (
-	"fmt"
 	"log"
-	"github.com/spf13/viper"
+	viper "github.com/spf13/viper"
 )
 
-type Config struct {
+type Configs struct {
 	
 	Database struct {
 		Host	string
@@ -22,17 +21,18 @@ type Config struct {
 	}
 }
 
-func env() {
-	viper.SetConfigFile("env.yaml")
+func Config() (result Configs) {
+	viper.SetConfigFile("config.yaml")
 	errConfig := viper.ReadInConfig()
     if errConfig != nil {
         log.Fatalf("Error reading config file: %s", errConfig)
     }
-    var cfg Config
+    var cfg Configs
     errConfig = viper.Unmarshal(&cfg)
     if errConfig != nil {
         log.Fatalf("Unable to decode config file: %s", errConfig)
     }
-	serverConfig := cfg
-	return serverConfig
+	
+	result = cfg
+	return result
 }
